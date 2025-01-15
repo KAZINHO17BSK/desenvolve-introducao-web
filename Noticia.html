@@ -13,64 +13,127 @@
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #5a4ff7;
       color: white;
-      padding: 18px;
-      text-align: center;
+      padding: 20px;
+      display: flex;
     }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-size: 40px;
+    }
+
     main {
       padding: 20px;
     }
 
-    h2 {
-      text-align: center; 
-      margin-top: 3%;
-      font-size: 25px; 
+    article {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 3%;
+      font-size: 1.8em;
+    }
+
     p {
       text-align: justify;
     }
+
     blockquote {
       margin: 20px 0;
       padding: 10px 20px;
       background-color: #f0f0f0;
       border-left: 5px solid #ccc;
     }
+
+    ol, ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    ol li, ul li {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: #5a4ff7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://i.pinimg.com/736x/35/44/9e/35449e88e8e805445bbce1a3dffff7ae.jpg" alt="">
     <h1>Notícias</h1>
-    
   </header>
-  <h2>Chuva intensa causa alagamentos em diversas regiões</h2>
+
   <main>
-    <p>Na manhã desta <b>sexta-feira</b>, fortes chuvas atingiram a cidade de Belo Horizonte, causando alagamentos em diversas regiões e transtornos para os moradores. Segundo os meteorologistas, as chuvas são consequência de uma frente fria que se desloca pela região Sudeste.</p>
+    <article>
+      <h2>Chuva intensa causa alagamentos em diversas regiões</h2>
+      <p>Na manhã desta <b>sexta-feira</b>, fortes chuvas atingiram a cidade de Belo Horizonte, causando alagamentos em diversas regiões e transtornos para os moradores. Segundo os meteorologistas, as chuvas são consequência de uma frente fria que se desloca pela região Sudeste.</p>
 
-    <p>De acordo com o <i>Instituto Nacional de Meteorologia</i> (INMET), o volume de chuva registrado nas últimas 24 horas ultrapassou a média histórica para o mês de janeiro. Os especialistas alertam para a possibilidade de novos temporais nos próximos dias.</p>
+      <p>De acordo com o <i>Instituto Nacional de Meteorologia</i> (INMET), o volume de chuva registrado nas últimas 24 horas ultrapassou a média histórica para o mês de janeiro. Os especialistas alertam para a possibilidade de novos temporais nos próximos dias.</p>
 
-    <blockquote>
-      "O volume de chuva foi realmente impressionante. Em algumas áreas, ultrapassou 100 mm em poucas horas, o que comprometeu a drenagem e causou inundações", afirmou um meteorologista.
-    </blockquote>
+      <blockquote>
+        "O volume de chuva foi realmente impressionante. Em algumas áreas, ultrapassou 100 mm em poucas horas, o que comprometeu a drenagem e causou inundações", afirmou um meteorologista.
+      </blockquote>
 
-    <p>A Defesa Civil recomendou que a população evite áreas de risco e fique atenta a sinais de deslizamentos, como rachaduras no solo ou em paredes. Para se proteger, seguem algumas dicas importantes:</p>
+      <p>A Defesa Civil recomendou que a população evite áreas de risco e fique atenta a sinais de deslizamentos, como rachaduras no solo ou em paredes. Para se proteger, seguem algumas dicas importantes:</p>
 
-    <ol>
-      <li>Evitar atravessar ruas alagadas.</li>
-      <li>Desligar aparelhos elétricos em caso de enchente.</li>
-      <li>Buscar abrigo em locais seguros.</li>
-    </ol>
+      <ol>
+        <li>Evitar atravessar ruas alagadas.</li>
+        <li>Desligar aparelhos elétricos em caso de enchente.</li>
+        <li>Buscar abrigo em locais seguros.</li>
+      </ol>
 
-    <p>Além disso, alguns moradores relataram prejuízos materiais significativos. Entre os itens mais afetados, destacam-se:</p>
+      <p>Além disso, alguns moradores relataram prejuízos materiais significativos. Entre os itens mais afetados, destacam-se:</p>
 
-    <ul>
-      <li>Móveis e eletrodomésticos.</li>
-      <li>Veículos submersos em garagens.</li>
-      <li>Documentos pessoais.</li>
-    </ul>
+      <ul>
+        <li>Móveis e eletrodomésticos.</li>
+        <li>Veículos submersos em garagens.</li>
+        <li>Documentos pessoais.</li>
+      </ul>
 
-    <p>A situação exige <mark>atenção máxima</mark> e a colaboração de todos para minimizar os impactos. A prefeitura informou que equipes de limpeza e assistência social estão atuando nas áreas mais afetadas.</p>
+      <p>A situação exige <mark>atenção máxima</mark> e a colaboração de todos para minimizar os impactos. A prefeitura informou que equipes de limpeza e assistência social estão atuando nas áreas mais afetadas.</p>
+    </article>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Portal de Notícias. Todos os direitos reservados.</p>
+    <p>Siga-nos: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+  </footer>
 </body>
 </html>
