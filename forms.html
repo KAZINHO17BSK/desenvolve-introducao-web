@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 500px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pesquisa de Satisfação</h2>
+    <form id="surveyForm">
+        <div class="section">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="section">
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="section">
+            <label for="phone">Telefone:</label><br>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="section">
+            <label>Você ficou satisfeito com nosso serviço?</label><br>
+            <input type="radio" name="satisfaction" value="sim" required> Sim
+            <input type="radio" name="satisfaction" value="nao"> Não
+        </div>
+        <div class="section">
+            <label>Você recomendaria nosso serviço?</label><br>
+            <input type="radio" name="recommend" value="sim" required> Sim
+            <input type="radio" name="recommend" value="nao"> Não
+        </div>
+        <div class="section">
+            <label>Qual o principal motivo da sua escolha?</label><br>
+            <select name="reason" required>
+                <option value="">Selecione...</option>
+                <option value="atendimento">Atendimento</option>
+                <option value="preco">Preço</option>
+                <option value="qualidade">Qualidade</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="section">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Autorizo compartilhar minha resposta com terceiros</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            if (!document.getElementById('consent').checked) {
+                alert('Você deve autorizar o compartilhamento da resposta para enviar o formulário.');
+                event.preventDefault();
+            } else {
+                alert('Formulário enviado com sucesso!');
+            }
+        });
+    </script>
+</body>
+</html>
