@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: lime;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 + p {
+            font-weight: bold;
+        }
+
+        .destaque {
+            font-family: Arial, sans-serif;
+        }
+
+        p.destaque {
+            font-weight: bold;
+        }
+
+        strong.destaque {
+            color: red;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: blue;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: darkgreen;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: purple;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid gray;
+            padding-left: 10px;
+            color: dimgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título Principal</h1>
+    <p>Este é um parágrafo normal.</p>
+    <p class="destaque">Este é um parágrafo destacado.</p>
+    <h2>Subtítulo</h2>
+    <p>Outro parágrafo.</p>
+    <h3>Seção menor</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ol>
+        <li>Passo 1</li>
+        <li>Passo 2</li>
+    </ol>
+    <blockquote>Citação de exemplo.</blockquote>
+    <a href="#">Este é um link</a>
+    <strong class="destaque">Texto destacado</strong>
+</body>
+</html>
