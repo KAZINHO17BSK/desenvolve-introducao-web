@@ -1,0 +1,287 @@
+body {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005f99;
+}
+
+a:visited {
+    color: #551a8b;
+    font-weight: normal;
+}
+
+.intro-section {
+    background: linear-gradient(to right, #4A90E2, #50E3C2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-left: 1em;
+    font-size: 1.8em;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    padding-right: 2%;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.sidebar-menu a:hover {
+    background-color: #357ABD;
+    color: #d0e0f5;
+}
+
+.sidebar-menu a:visited {
+    font-weight: normal;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    padding: 1em;
+}
+
+footer a {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+    border: 2px solid #fff;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: white;
+    color: #222;
+}
+
+footer a:visited {
+    font-weight: normal;
+}
+
+.benefits-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.benefits-text {
+    width: 70%;
+}
+
+.benefits-title {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.participation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.participation-item {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+body {
+        width: 100%;
+        padding: 0 15px;
+}
+
+.explanation {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+}
+
+.sidebar-menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+}
+
+.sidebar-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.sidebar-menu li {
+        width: 100%;
+}
+
+.sidebar-menu a {
+        width: 80%;
+}
+
+.intro-section {
+        padding: 3em 1em;
+}
+
+header {
+        flex-direction: column;
+        text-align: center;
+}
+
+header h1 {
+        margin-left: 0;
+        font-size: 1.5em;
+}
+
+.benefits-section,
+.participation-section {
+        flex-direction: column;
+        text-align: center;
+}
+
+.benefits-text,
+.benefits-title,
+.participation-item {
+        width: 100%;
+        padding: 1em 0;
+}
+
+footer {
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+}
+
+footer a {
+        width: 80%;
+        min-width: auto;
+}
+}
+
+@media print {
+body {
+        background: white;
+        color: black;
+        width: 100%;
+        font-size: 12pt;
+        font-family: "Times New Roman", serif;
+}
+
+header, footer {
+        background: none;
+        color: black;
+        box-shadow: none;
+}
+
+a {
+        text-decoration: underline;
+        color: black;
+}
+
+.sidebar-menu {
+        display: none;
+}
+
+.intro-section {
+        background: white;
+        color: black;
+}
+
+.benefits-section,
+.participation-section {
+        border: none;
+}
+
+footer {
+        display: none;
+}
+}

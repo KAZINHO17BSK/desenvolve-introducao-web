@@ -1,0 +1,186 @@
+body {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005f99;
+}
+
+/* Links visitados */
+a:visited {
+    color: #551a8b;
+    font-weight: normal;
+}
+
+
+.intro-section {
+    height: 550px;
+    background: linear-gradient(to right, #4A90E2, #50E3C2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+#design-archives {
+    display: none;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-left: 1em;
+    font-size: 1.8em;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.sidebar-menu a:hover {
+    background-color: #357ABD;
+    color: #d0e0f5;
+}
+
+.sidebar-menu a:visited {
+    font-weight: normal;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    padding: 1em;
+}
+
+footer a {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+    border: 2px solid #fff;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: white;
+    color: #222;
+}
+
+footer a:visited {
+    font-weight: normal;
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.benefits-text {
+    width: 70%;
+}
+
+.benefits-title {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.participation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.participation-item {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zen-supporting p:first-of-type::first-letter {
+    font-size: 6em;
+    font-family: "Times New Roman", serif;
+    float: left;
+    margin-right: 8px;
+}
